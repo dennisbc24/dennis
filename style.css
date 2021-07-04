@@ -54,7 +54,7 @@ background-color: white;
 display: flex;
 justify-content: center;
 }
-.imagen1{
+.item1 img{
     width: 250px;
     height: 250px;
 }
