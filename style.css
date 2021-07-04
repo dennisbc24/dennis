@@ -45,26 +45,24 @@ main {
 
        }
 .item{
+    display: flex;
+    justify-content: center;
     width: 280px;
     height: 280px;
     flex-grow: 1;
 }
 .item1{
 background-color: white;
-display: flex;
-justify-content: center;
+
 }
-.item1 img{
+.imagenitem{
     width: 250px;
     height: 250px;
 }
 .item2{
 background-color: aquamarine;    
 }
-.item2 img{
-    width: 249px;
-    height: 249px;
-}
+
 .item3{
 background-color: blueviolet;    
 }
