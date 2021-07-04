@@ -61,6 +61,10 @@ justify-content: center;
 .item2{
 background-color: aquamarine;    
 }
+.item2 img{
+    width: 249px;
+    height: 249px;
+}
 .item3{
 background-color: blueviolet;    
 }
