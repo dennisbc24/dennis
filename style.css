@@ -55,8 +55,8 @@ display: flex;
 justify-content: center;
 }
 .imagen1{
-    width: auto;
-    height: auto;
+    width: 250px;
+    height: 250px;
 }
 .item2{
 background-color: aquamarine;    
