@@ -22,7 +22,7 @@ header{
     width: 100%;
     min-width: 280px;
 }
-.name{
+header h1{
     font-size: 3.4rem;
     text-align: center;
     background-color: var(--one-color);
@@ -33,48 +33,33 @@ header{
 main {
     font-size: 1.6rem;
     background-color: var(--four-color);
-    color: red;
     height: auto;
     width: 100%;
     min-width: 280px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.articulos{
+main > p {
+    color: red;
+}
+.articulos__cajas{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 
        }
-.item{
+.caja{
     display: flex;
     justify-content: center;
-    width: 280px;
+    width: 240px;
+    max-width: 50vw;
     height: 280px;
-    flex-grow: 1;
-}
-.item1{
-background-color: white;
-
-}
-.imagenitem{
-    width: 250px;
-    height: 250px;
-}
-.item2{
-background-color: white;    
-}
-
-.item3{
-background-color: white;    
-}
-.item4{
-    background-color: white;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
     }
-    .item5{
-    background-color: white;    
-    }
-    .item6{
-    background-color: white;    
-    }
+.caja__imagen img{
+width: 230px;
+}
 aside{
     background-color: var(--two-color);
     height: auto;
@@ -97,7 +82,7 @@ footer{
 
 @media (min-width: 480px){
 main {
-    
+    min-width: 336px;
     width: 70%;
     height: auto;
 }
@@ -106,12 +91,4 @@ aside {
     width: 30%;
     min-width: auto;
 }
-}
-
-@media (min-width: 800px){
-    
-}
-
-.c1, .c1{
-    
 }
