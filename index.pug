@@ -1,0 +1,20 @@
+doctype html 
+html 
+	include configuraciones.pug
+	body   
+		header
+			h1 Maxi Cusco
+		main
+			p Estos articulos están en oferta!!!
+			section.articulos__cajas 
+				+caja('esquinero.jpg', 'Articulo 1', 'El producto es asi')
+				+caja('esquinero.jpg','Articulo 1','El producto es asi')
+				+caja('esquinero.jpg','Articulo 1','El producto es asi')
+				+caja('esquinero.jpg','Articulo 1','El producto es asi')
+				+caja('esquinero.jpg','Articulo 1','El producto es asi')
+				+caja('esquinero.jpg','Articulo 1','El producto es asi')
+		aside
+			div 
+				p Esta seccion es de novedades
+		footer
+			p footer
