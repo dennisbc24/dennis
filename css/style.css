@@ -129,6 +129,13 @@ aside {
 }
 
 footer {
+  padding-top: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: white;
   width: 100%;
   height: auto;
@@ -136,6 +143,33 @@ footer {
   color: white;
   min-width: 280px;
 }
-footer img {
+footer a > img {
   height: 50px;
+}
+footer .boton-llamar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 130px;
+  background-color: white;
+  border: solid #004fc4 2px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+footer .boton-llamar p {
+  color: #004fc4;
+  font-family: "Acme", sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.icono-telefono {
+  height: 35px;
 }
