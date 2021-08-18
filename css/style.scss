@@ -120,26 +120,26 @@ footer{
     a > img {
         height: 50px;
     }
-    .boton-llamar {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 50px;
-        width: 130px;
-        background-color:white;
-        border: solid #004fc4 2px;
-        border-radius: 10px;
-        margin-left: 10px;
+}
+.boton-llamar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    width: 130px;
+    background-color:white;
+    border: solid #004fc4 2px;
+    border-radius: 10px;
+    margin-left: 10px;
+    
+    p {
+        color: #004fc4;
+        font-family: $FuenteAlternativa;
+        font-size: 2rem;
+        text-decoration: none;
         
-        p {
-            color: #004fc4;
-            font-family: $FuenteAlternativa;
-            font-size: 2rem;
-            text-decoration: none;
-            
-        }
-            
     }
+        
 }
 .icono-telefono {
     height: 35px;
