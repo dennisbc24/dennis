@@ -1,0 +1,16 @@
+main {
+  min-width: 336px;
+  width: 70%;
+  height: auto;
+}
+
+aside {
+  height: auto;
+  width: 30%;
+  min-width: auto;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}

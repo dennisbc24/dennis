@@ -1,20 +1,98 @@
+
 doctype html 
 html 
 	include configuraciones.pug
 	body   
 		header
 			h1 Maxi Cusco
+			span 
+				img(src="./icons/LOGO_MAXI.png", alt="Logo MaxiCusco")
 		main
-			p Estos articulos están en oferta!!!
-			section.articulos__cajas 
-				+caja('esquinero.jpg', 'Articulo 1', 'El producto es asi')
-				+caja('esquinero.jpg','Articulo 1','El producto es asi')
-				+caja('esquinero.jpg','Articulo 1','El producto es asi')
-				+caja('esquinero.jpg','Articulo 1','El producto es asi')
-				+caja('esquinero.jpg','Articulo 1','El producto es asi')
-				+caja('esquinero.jpg','Articulo 1','El producto es asi')
+			p Los productos mas novedosos en un solo lugar!!!
+			section.articulos__muebles 
+				article.articulos__container
+					+caja('ropero-madera3.jpg', 'Ropero de Madera 3 Cuerpos')
+					+detalle('- 170cm x 135cm x 45cm.','- Estructura de Madera')
+				article.articulos__container
+					+caja('ropero-madera2.jpg','Ropero de Madera 2 Cuerpos')
+					+detalle('- 170cm x 105cm x 45cm.','- Estructura de Madera')
+				article.articulos__container
+					+caja('esquinero.jpg','Ropero Esquinero 4 Cuerpos')
+					+detalle('- 170cm x 135cm x 45cm.','- 4 Cuerpos', '- Estructura de Metal en Forma de L') 
+				article.articulos__container
+					+caja('roperometal135.jpg','Ropero 3 Cuerpos Grande')
+					+detalle('- 175cm x 135cm x 45cm.','- Tubos Gruesos', '- Estructura de Metal')  
+				article.articulos__container
+					+caja('roperometal120.jpg','Ropero 3 Cuerpos Mediano')
+					+detalle('- 170cm x 120cm x 45cm.','- Solo 1 Colgador pero mas compartimentos', '- Estructura de Metal')  
+				article.articulos__container
+					+caja('roperometal3c105.jpg','Ropero 3 Cuerpos Angosto')
+					+detalle('- 170cm x 105cm x 45cm.','- El mas angosto de 3 cuerpos', '- Estructura de Metal')  
+				article.articulos__container
+					+caja('roperometal2c.jpg','Ropero 2 Cuerpos')
+					+detalle('- 170cm x 105cm x 45cm.','- Tamaño Standar', '- Estructura de Metal facil de armar')  
+				article.articulos__container
+					+caja('zapatera9n2c.jpg','Zapatera 9 Niveles con Cajones')
+					+detalle('- 168cm x 60cm x 45cm.','- Trae 2 Cajones en la parte inferior', '- Estructura de metal Fuerte')  
+				article.articulos__container
+					+caja('zapatera7.jpg','Zapatera 7 Niveles')
+					+detalle('- 128cm x 60cm x 45cm.','- Fácil de armar', '- Estructura de metal Fuerte')   
+				article.articulos__container
+					+caja('zapatera5.jpg','Zapatera 5 Niveles')
+					+detalle('- 90cm x 60cm x 45cm.','- El mas portátil.', '- Estructura de metal Fuerte')   
+			section.articulos__muebles 
+				article.articulos__container
+					+caja('esquinero.jpg', 'Ropero Esquinero')
+					+detalle(DetalleRoperoEsquinero)
+				article.articulos__container
+					+caja('esquinero.jpg','Ropero Madera')
+					+detalle(DetalleRoperoM2)
+				article.articulos__container
+					+caja('esquinero.jpg','Articulo 1','El producto es asi')
+				article.articulos__container
+					+caja('esquinero.jpg','Articulo 1','El producto es asi')
+				article.articulos__container
+					+caja('esquinero.jpg','Articulo 1','El producto es asi')
+				article.articulos__container
+					+caja('esquinero.jpg','Articulo 1','El producto es asi')
+			section.articulos__muebles 
+				article.articulos__container
+					+caja('esquinero.jpg', 'Ropero Esquinero')
+					+detalle(DetalleRoperoEsquinero)
+				article.articulos__container
+					+caja('esquinero.jpg','Ropero Madera')
+					+detalle(DetalleRoperoM2)
+				article.articulos__container
+					+caja('esquinero.jpg','Articulo 1','El producto es asi')
+				article.articulos__container
+					+caja('esquinero.jpg','Articulo 1','El producto es asi')
+				article.articulos__container
+					+caja('esquinero.jpg','Articulo 1','El producto es asi')
+				article.articulos__container
+					+caja('esquinero.jpg','Articulo 1','El producto es asi')
+			section.articulos__muebles 
+				article.articulos__container
+					+caja('esquinero.jpg', 'Ropero Esquinero')
+					+detalle(DetalleRoperoEsquinero)
+				article.articulos__container
+					+caja('esquinero.jpg','Ropero Madera')
+					+detalle(DetalleRoperoM2)
+				article.articulos__container
+					+caja('esquinero.jpg','Articulo 1','El producto es asi')
+				article.articulos__container
+					+caja('esquinero.jpg','Articulo 1','El producto es asi')
+				article.articulos__container
+					+caja('esquinero.jpg','Articulo 1','El producto es asi')
+				article.articulos__container
+					+caja('esquinero.jpg','Articulo 1','El producto es asi')
 		aside
 			div 
 				p Esta seccion es de novedades
 		footer
-			p footer
+			p 
+				a(href="https://www.facebook.com/110318787411007") 
+					img(src="./icons/enlace_facebook.png", alt="")
+				a(href="https://wa.me/51993862663?text=Me%20Hola%20estoy%20interesado%20en%20uno%20de%20los%20productos%20de%20la%20tienda%20quisiera%20los%20precios")
+					img(src="./icons/Whatsapp.png", alt="link whatsapp")
+				a(href="tel:993862663")
+					img(src="./icons/Whatsapp.png", alt="link whatsapp")
