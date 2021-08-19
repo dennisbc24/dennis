@@ -142,9 +142,8 @@ footer {
   font-size: 1.6rem;
   color: white;
   min-width: 280px;
-}
-footer a > img {
-  height: 50px;
+  -webkit-box-shadow: black;
+          box-shadow: black;
 }
 
 .boton-llamar {
@@ -159,18 +158,19 @@ footer a > img {
           align-items: center;
   height: 50px;
   width: 130px;
-  background-color: white;
-  border: solid #004fc4 2px;
+  background-color: #004fc4;
   border-radius: 10px;
   margin-left: 10px;
-}
-.boton-llamar p {
-  color: #004fc4;
-  font-family: "Acme", sans-serif;
-  font-size: 2rem;
   text-decoration: none;
+  color: white;
+  font-family: "Acme", sans-serif;
+  font-size: 1.8rem;
 }
 
-.icono-telefono {
-  height: 35px;
+.icono-contacto {
+  height: 50px;
+}
+
+.icono-llamada {
+  height: 25px;
 }
