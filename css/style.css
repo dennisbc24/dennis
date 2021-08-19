@@ -162,9 +162,12 @@ footer {
   border-radius: 10px;
   margin-left: 10px;
   text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.boton-llamar p {
   color: white;
   font-family: "Acme", sans-serif;
-  font-size: 1.8rem;
 }
 
 .icono-contacto {

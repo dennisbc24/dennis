@@ -129,10 +129,13 @@ footer{
     border-radius: 10px;
     margin-left: 10px;
     text-decoration: none;
-    color: $four-color;
-    font-family: $FuenteAlternativa;
     font-size: 1.8rem;
     }
+.boton-llamar p{
+    
+    color: $four-color;
+    font-family: $FuenteAlternativa;
+}
 .icono-contacto {
     height: 50px;
     }
