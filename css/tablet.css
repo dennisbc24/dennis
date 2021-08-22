@@ -1,3 +1,7 @@
+nav li {
+  margin: 20px;
+}
+
 main {
   min-width: 336px;
   width: 70%;

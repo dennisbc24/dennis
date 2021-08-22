@@ -5,12 +5,23 @@ html
 	include configuraciones.pug
 	body   
 		header
-			h1 Maxi Cusco
-			span 
-				img(src="./icons/LOGO_MAXI.png", alt="Logo MaxiCusco")
+			.logo
+				h1 MaxiCusco.net
+				span 
+					img(src="./icons/LOGO_MAXI.png", alt="Logo MaxiCusco")
+			nav
+				ul 
+					li 
+						a(href="#roperos") Roperos
+					li 
+						a(href="#artefactos") Artefactos
+					li 
+						a(href="#varios") Varios
 		main
-			p Los productos mas novedosos en un solo lugar!!!
-			section.articulos__muebles 
+			section 
+				.portada 
+					img(src="./images/otros/portada.jpg", alt="portada")
+			section.articulos__roperos.articulos#roperos 
 				article.articulos__container
 					+caja('ropero-madera3.jpg', 'Ropero de Madera 3 Cuerpos')
 					+detalle('- 170cm x 135cm x 45cm.','- Estructura de Madera')
@@ -41,7 +52,7 @@ html
 				article.articulos__container
 					+caja('zapatera5.jpg','Zapatera 5 Niveles')
 					+detalle('- 90cm x 60cm x 45cm.','- El mas portátil.', '- Estructura de metal Fuerte')   
-			section.articulos__muebles 
+			section.articulos__artefactos.articulos#artefactos 
 				article.articulos__container
 					+caja('esquinero.jpg', 'Ropero Esquinero')
 					+detalle(DetalleRoperoEsquinero)
@@ -56,7 +67,7 @@ html
 					+caja('esquinero.jpg','Articulo 1','El producto es asi')
 				article.articulos__container
 					+caja('esquinero.jpg','Articulo 1','El producto es asi')
-			section.articulos__muebles 
+			section.articulos__varios.articulos#varios 
 				article.articulos__container
 					+caja('esquinero.jpg', 'Ropero Esquinero')
 					+detalle(DetalleRoperoEsquinero)
@@ -71,7 +82,7 @@ html
 					+caja('esquinero.jpg','Articulo 1','El producto es asi')
 				article.articulos__container
 					+caja('esquinero.jpg','Articulo 1','El producto es asi')
-			section.articulos__muebles 
+			section.articulos__otros.articulos 
 				article.articulos__container
 					+caja('esquinero.jpg', 'Ropero Esquinero')
 					+detalle(DetalleRoperoEsquinero)
@@ -88,14 +99,15 @@ html
 					+caja('esquinero.jpg','Articulo 1','El producto es asi')
 		aside
 			div 
-				p Esta seccion es de novedades ahora estamos desde github
+				p Esta seccion es de novedades
 		footer
-			
-			a(href="https://www.facebook.com/110318787411007") 
-				img.icono-contacto(src="./icons/enlace_facebook.png", alt="icono facebook")
-			a(href="https://wa.me/51993862663?text=%20Hola%20estoy%20interesado%20en%20uno%20de%20los%20productos%20de%20la%20tienda%20quisiera%20los%20precios")
-				img.icono-contacto(src="./icons/Whatsapp.png", alt="link whatsapp")
+			a(href="https://www.facebook.com/110318787411007").boton-facebook 
+				p Maxi Cusco
+				img.icono-facebook(src="./icons/enlace_facebook.png", alt="icono whatsapp").icono-telefono
 			a(href="tel:993862663").boton-llamar 
 				p Llamar
 				img.icono-llamada(src="./icons/telefono.png?20210818", alt="icono telefono").icono-telefono
-		
+			a(href="https://wa.me/51993862663?text=%20Hola%20estoy%20interesado%20en%20uno%20de%20los%20productos%20de%20la%20tienda%20quisiera%20los%20precios").boton-wsp 
+				p WhatsApp
+				img.icono-wsp(src="./icons/Whatsapp.png", alt="icono whatsapp").icono-telefono
+			

@@ -9,17 +9,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
     <link href="https://fonts.googleapis.com/css2?family=Acme&amp;display=swap" rel="stylesheet"/>
-    <title>Maxi Cusco</title>
+    <title>MaxiCusco.net</title>
     <link rel="stylesheet" href="./css/style.css"/>
     <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 480px)"/>
   </head>
   <body>  
     <header>
-      <h1>Maxi Cusco</h1><span> <img src="./icons/LOGO_MAXI.png" alt="Logo MaxiCusco"/></span>
+      <div class="logo">
+        <h1>MaxiCusco.net</h1><span> <img src="./icons/LOGO_MAXI.png" alt="Logo MaxiCusco"/></span>
+      </div>
+      <nav>
+        <ul> 
+          <li> <a href="#roperos">Roperos</a></li>
+          <li> <a href="#artefactos">Artefactos</a></li>
+          <li> <a href="#varios">Varios</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <p>Los productos mas novedosos en un solo lugar!!!</p>
-      <section class="articulos__muebles"> 
+      <section> 
+        <div class="portada"> <img src="./images/otros/portada.jpg" alt="portada"/></div>
+      </section>
+      <section class="articulos__roperos articulos" id="roperos"> 
         <article class="articulos__container">
             <div class="caja">
               <div class="caja__imagen"><img src="./images/ropero-madera3.jpg" alt="Organizador de Ropa"/></div>
@@ -171,7 +182,7 @@
             </div>
         </article>
       </section>
-      <section class="articulos__muebles"> 
+      <section class="articulos__artefactos articulos" id="artefactos"> 
         <article class="articulos__container">
             <div class="caja">
               <div class="caja__imagen"><img src="./images/esquinero.jpg" alt="Organizador de Ropa"/></div>
@@ -227,7 +238,7 @@
             </div>
         </article>
       </section>
-      <section class="articulos__muebles"> 
+      <section class="articulos__varios articulos" id="varios"> 
         <article class="articulos__container">
             <div class="caja">
               <div class="caja__imagen"><img src="./images/esquinero.jpg" alt="Organizador de Ropa"/></div>
@@ -283,7 +294,7 @@
             </div>
         </article>
       </section>
-      <section class="articulos__muebles"> 
+      <section class="articulos__otros articulos"> 
         <article class="articulos__container">
             <div class="caja">
               <div class="caja__imagen"><img src="./images/esquinero.jpg" alt="Organizador de Ropa"/></div>
@@ -342,10 +353,12 @@
     </main>
     <aside>
       <div> 
-        <p>Esta seccion es de novedades ahora estamos desde github</p>
+        <p>Esta seccion es de novedades</p>
       </div>
     </aside>
-    <footer><a href="https://www.facebook.com/110318787411007"> <img class="icono-contacto" src="./icons/enlace_facebook.png" alt="icono facebook"/></a><a href="https://wa.me/51993862663?text=%20Hola%20estoy%20interesado%20en%20uno%20de%20los%20productos%20de%20la%20tienda%20quisiera%20los%20precios"><img class="icono-contacto" src="./icons/Whatsapp.png" alt="link whatsapp"/></a><a class="boton-llamar" href="tel:993862663"> 
-        <p>Llamar</p><img class="icono-llamada icono-telefono" src="./icons/telefono.png?20210818" alt="icono telefono"/></a></footer>
+    <footer><a class="boton-facebook" href="https://www.facebook.com/110318787411007"> 
+        <p>Maxi Cusco</p><img class="icono-facebook icono-telefono" src="./icons/enlace_facebook.png" alt="icono whatsapp"/></a><a class="boton-llamar" href="tel:993862663"> 
+        <p>Llamar</p><img class="icono-llamada icono-telefono" src="./icons/telefono.png?20210818" alt="icono telefono"/></a><a class="boton-wsp" href="https://wa.me/51993862663?text=%20Hola%20estoy%20interesado%20en%20uno%20de%20los%20productos%20de%20la%20tienda%20quisiera%20los%20precios"> 
+        <p>WhatsApp</p><img class="icono-wsp icono-telefono" src="./icons/Whatsapp.png" alt="icono whatsapp"/></a></footer>
   </body>
 </html>
