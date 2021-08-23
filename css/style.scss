@@ -27,6 +27,7 @@ header{
     justify-content: center;
     padding: 15px 0 3px 0;
     flex-direction: column;
+    position: fixed;
 }
 .logo {
     display: flex;
@@ -67,17 +68,23 @@ nav {
         
 }
 main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 88px;
     font-size: 1.6rem;
     background-color: $four-color;
     height: auto;
     width: 100%;
     min-width: 280px;
     font-family: Arial, Helvetica, sans-serif;
-    .portada img {
+    .portada picture {
         width: 100%;
+        img {
+            width: 100%;
+        }
+        
     }
 }
-
 .articulos {
     display: flex;
     overflow-x: scroll;
@@ -85,6 +92,28 @@ main {
     scroll-snap-type: x proximity;
         }
 
+    .caja--detalles {
+        width: 170px;
+        text-align: left;
+        margin-top: 10px;
+        font-family: $FuenteAlternativa;
+        margin-bottom: 24px;
+    }
+    .boton-info {
+        border:none;
+        background-color: #5a3030;
+        color: #ffffff;
+        width: 119px;
+        line-height: 2rem;
+        box-shadow: 0px 5px 15px 0px rgb(51 51 51 / 30%);
+        border-radius: 5px;
+        position: absolute;
+        bottom: 9px;
+        right: 9px;
+    }
+.articulos__roperos {
+    flex-direction: row-reverse;
+}
 
 .articulos  article{
     display: flex;
@@ -102,25 +131,21 @@ main {
     scroll-snap-align: center;
     border-radius: 10px;
     }
+.articulos__container{
+    position: relative;
+}
 .articulos__container li{
 justify-content: left;
 color: #666;
 font-size: 1.4rem;
 list-style: none;
 
-
-
 }
 .caja__imagen img{
 width: 240px;
 padding-top: auto;
 }
-.articulos__roperos .caja--detalles {
-    width: 170px;
-    text-align: left;
-    margin-top: 10px;
-    font-family: $FuenteAlternativa;
-}
+
 .caja h3{
     text-align: center;
     color: #262626;
@@ -184,6 +209,7 @@ footer{
     p{
         color: #00d100;
         font-family: $FuenteAlternativa;
+        text-align: center;
         }
     .icono-wsp {
         width: 57px;
@@ -204,11 +230,19 @@ footer{
     p{
         color: rgb(0, 0, 0);
         font-family: $FuenteAlternativa;
+        text-align: center;
         }
     .icono-facebook {
         width: 47px;
     }
 }        
-
+.flotante-wsp{
+    position: fixed;
+    top:40vh;
+    left: 5px;
+    .icono-flotante{
+        width: 40px;
+    }
+}
 
 

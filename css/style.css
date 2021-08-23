@@ -32,6 +32,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: fixed;
 }
 
 .logo {
@@ -85,6 +86,14 @@ nav li a {
 }
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 88px;
   font-size: 1.6rem;
   background-color: white;
   height: auto;
@@ -92,7 +101,10 @@ main {
   min-width: 280px;
   font-family: Arial, Helvetica, sans-serif;
 }
-main .portada img {
+main .portada picture {
+  width: 100%;
+}
+main .portada picture img {
   width: 100%;
 }
 
@@ -104,6 +116,35 @@ main .portada img {
   overscroll-behavior-x: contain;
   -ms-scroll-snap-type: x proximity;
       scroll-snap-type: x proximity;
+}
+
+.caja--detalles {
+  width: 170px;
+  text-align: left;
+  margin-top: 10px;
+  font-family: "Acme", sans-serif;
+  margin-bottom: 24px;
+}
+
+.boton-info {
+  border: none;
+  background-color: #5a3030;
+  color: #ffffff;
+  width: 119px;
+  line-height: 2rem;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.3);
+          box-shadow: 0px 5px 15px 0px rgba(51, 51, 51, 0.3);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 9px;
+  right: 9px;
+}
+
+.articulos__roperos {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .articulos article {
@@ -133,6 +174,10 @@ main .portada img {
   border-radius: 10px;
 }
 
+.articulos__container {
+  position: relative;
+}
+
 .articulos__container li {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
@@ -145,13 +190,6 @@ main .portada img {
 .caja__imagen img {
   width: 240px;
   padding-top: auto;
-}
-
-.articulos__roperos .caja--detalles {
-  width: 170px;
-  text-align: left;
-  margin-top: 10px;
-  font-family: "Acme", sans-serif;
 }
 
 .caja h3 {
@@ -240,6 +278,7 @@ footer {
 .boton-wsp p {
   color: #00d100;
   font-family: "Acme", sans-serif;
+  text-align: center;
 }
 .boton-wsp .icono-wsp {
   width: 57px;
@@ -268,7 +307,17 @@ footer {
 .boton-facebook p {
   color: black;
   font-family: "Acme", sans-serif;
+  text-align: center;
 }
 .boton-facebook .icono-facebook {
   width: 47px;
+}
+
+.flotante-wsp {
+  position: fixed;
+  top: 40vh;
+  left: 5px;
+}
+.flotante-wsp .icono-flotante {
+  width: 40px;
 }
