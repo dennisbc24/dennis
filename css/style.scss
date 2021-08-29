@@ -25,7 +25,7 @@ header{
     background: linear-gradient(235deg, white 16.69%, wheat 100%);
     display: flex;
     justify-content: center;
-    padding: 15px 0 3px 0;
+    padding: 5px 0 3px 0;
     flex-direction: column;
     position: fixed;
 }
@@ -70,7 +70,7 @@ nav {
 main {
     display: flex;
     flex-direction: column;
-    margin-top: 88px;
+    margin-top: 38px;
     font-size: 1.6rem;
     background-color: $four-color;
     height: auto;
@@ -108,11 +108,11 @@ main {
         line-height: 2rem;
         box-shadow: 0px 5px 15px 0px rgb(51 51 51 / 30%);
         border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.2rem;
+        text-align: center;
         
         }
-.articulos__roperos {
-    flex-direction: row-reverse;
-}
 
 .articulos  article{
     display: flex;
@@ -177,7 +177,7 @@ footer{
     align-items: center;
     height: 50px;
     width: 130px;
-    background-color:rgb(87, 88, 167);
+    background-color:#5a3030db;
     border-radius: 10px;
     margin-left: 10px;
     text-decoration: none;

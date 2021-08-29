@@ -1,5 +1,5 @@
 nav li {
-  margin: 20px;
+  margin: 0px 20px;
 }
 
 main {
@@ -16,7 +16,7 @@ main .articulos__roperos {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  margin-top: 36px;
+  margin-top: 38px;
 }
 main .articulos__artefactos {
   -webkit-box-ordinal-group: 4;
@@ -38,7 +38,7 @@ aside {
   height: auto;
   width: 30%;
   min-width: auto;
-  margin-top: 106px;
+  margin-top: 79px;
 }
 
 footer a {
