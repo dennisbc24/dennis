@@ -145,7 +145,6 @@ main .portada picture img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: linear-gradient(218deg, white 16.69%, wheat 100%);
   margin: 10px;
   margin-left: 10px;
   padding: 10px;

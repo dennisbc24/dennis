@@ -22,7 +22,7 @@ body{
 header{
     width: 100%;
     min-width: 280px;
-    background: linear-gradient(235deg, white 16.69%, wheat 100%);
+    background: linear-gradient(235deg, white 16.69%, rgb(245, 222, 179) 100%);
     display: flex;
     justify-content: center;
     padding: 5px 0 3px 0;
@@ -116,7 +116,7 @@ main {
 
 .articulos  article{
     display: flex;
-    background: linear-gradient(218deg, white 16.69%, wheat 100%);
+   
     margin: 10px;
     margin-left: 10px;
     padding: 10px;
