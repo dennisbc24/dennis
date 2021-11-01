@@ -129,7 +129,7 @@ main .portada picture img {
 
 .boton-info {
   border: none;
-  background-color: #5a3030;
+  background-color: #030c04;
   color: #ffffff;
   width: 119px;
   line-height: 2rem;
@@ -167,6 +167,10 @@ main .portada picture img {
   border-radius: 10px;
 }
 
+.articulos__container {
+  background-color: #fbf3e2;
+}
+
 .articulos__container li {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
@@ -177,8 +181,9 @@ main .portada picture img {
 }
 
 .caja__imagen img {
-  height: 240px;
+  width: 240px;
   padding-top: auto;
+  border-radius: 10px;
 }
 
 .caja h3 {
