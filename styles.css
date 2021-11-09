@@ -209,11 +209,19 @@ main {
   color: #17141b;
   font-family: "Roboto", sans-serif;
 }
+.articulos__container .detalles ul {
+  list-style: none;
+  color: gray;
+  text-transform: uppercase;
+  text-align: start;
+  margin: 1vh 2.5vw 0 2.5vw;
+}
 .articulos__container h1 {
   font-family: "Baloo Bhaina 2";
   font-style: normal;
   font-size: 1.2rem;
   padding: 0 5px;
+  line-height: 13px;
 }
 .articulos__container .calltoaction {
   height: auto;
