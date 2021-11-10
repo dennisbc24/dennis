@@ -28,6 +28,13 @@
             color: $Color-nombre;
             font-family: $Fuente1;
         }
+        ul{
+            list-style: none;
+            color: gray;
+            text-transform: uppercase;
+            text-align: start;
+            margin: 1vh 2.5vw 0 2.5vw;
+        }
     }
     
         
@@ -36,6 +43,7 @@
             font-style: normal;
             font-size: 1.2rem;
             padding:0 5px;
+            line-height: 13px;
             }
        
         .calltoaction{

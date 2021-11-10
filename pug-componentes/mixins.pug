@@ -1,8 +1,12 @@
-mixin card(titulo,precio,imagen,link)
+mixin card(titulo,precio,imagen,link,detalle1,detalle2,detalle3)
 	article.articulos__container
 		img(src="./img/small/"+imagen, alt=""+titulo)
 		.detalles 
 			p=titulo
+			ul
+				li=detalle1
+				li=detalle2
+				li=detalle3
 			h1=precio
 		.calltoaction
 			a(href=""+link)
