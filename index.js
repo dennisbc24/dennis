@@ -18,3 +18,4 @@ const masonryLayout = (containerElem,itemsElems,columns) => {
     }
 }
 masonryLayout(document.getElementById('articulos'), document.querySelectorAll('.articulos__container'), 2)
+
